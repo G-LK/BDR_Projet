@@ -1,0 +1,85 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>304</x><y>392</y><w>128</w><h>88</h></coordinates><panel_attributes>Client
+--
+- nivSport
+- objectif 
+- poids 
+- taille 
+- nbrJoursDispo
+
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>608</y><w>136</w><h>64</h></coordinates><panel_attributes>ProgrammeSportif
+--
+_-numProgrammeSport_
+- tempsExo 
+- nbrRepetition 
+- groupeMusculaire
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>904</x><y>616</y><w>184</w><h>80</h></coordinates><panel_attributes>Exercice
+--
+- nom 
+- groupMusculaire 
+- équipementNecessaire 
+- description
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>344</x><y>216</y><w>80</w><h>24</h></coordinates><panel_attributes>Administrateur
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>568</x><y>216</y><w>80</w><h>24</h></coordinates><panel_attributes>Coachs</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>336</x><y>0</y><w>104</w><h>120</h></coordinates><panel_attributes>Utilisateur
+--
+_-id_
+- Nom[1..*]
+- Prenom[1..*]
+- email 
+- motDePasse
+- type 
+- sexe 
+- bday 
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>376</x><y>112</y><w>24</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>120</y><w>264</w><h>112</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;120;10;20;310;20</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>120</y><w>136</w><h>112</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>150;120;150;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>616</y><w>136</w><h>64</h></coordinates><panel_attributes>ProgrammeNutritionnel
+--
+_- numNutrition_
+- calories 
+- prefAlimentaire 
+- objectif 
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>424</x><y>216</y><w>176</w><h>208</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..1
+&lt; Conseille </panel_attributes><additional_attributes>10;230;130;230;130;10;180;10</additional_attributes></element><element><id>Relation</id><coordinates><x>128</x><y>624</y><w>136</w><h>40</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=	0..1
+&lt; possède </panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>232</y><w>80</w><h>192</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..1
+Conseille v</panel_attributes><additional_attributes>80;210;10;210;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>248</x><y>616</y><w>232</w><h>64</h></coordinates><panel_attributes>JournalPersonnel
+--
+_- idJournal_
+debutProgrammeSportif 
+debutProgrammeNutritionnel 
+commentaires 
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>352</x><y>472</y><w>72</w><h>160</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=	1
+possède v</panel_attributes><additional_attributes>10;10;10;180</additional_attributes></element><element><id>Relation</id><coordinates><x>472</x><y>624</y><w>144</w><h>40</h></coordinates><panel_attributes>lt=-
+m1=0..1
+m2=	1
+possède &gt;</panel_attributes><additional_attributes>160;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>456</x><y>232</y><w>200</w><h>400</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=1
+Commente v</panel_attributes><additional_attributes>10;480;10;420;220;230;220;10</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>232</y><w>112</w><h>400</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=1
+Commente v</panel_attributes><additional_attributes>110;480;10;300;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>224</y><w>96</w><h>400</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=1
+ajuster v</panel_attributes><additional_attributes>50;480;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>40</x><y>216</y><w>184</w><h>416</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=1
+ajuster v</panel_attributes><additional_attributes>10;500;10;10;210;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>208</x><y>216</y><w>80</w><h>24</h></coordinates><panel_attributes>Nutrisionniste</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>328</x><y>128</y><w>24</w><h>280</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;10;10;330</additional_attributes></element><element><id>UMLNote</id><coordinates><x>448</x><y>64</y><w>192</w><h>56</h></coordinates><panel_attributes>l'héritage ici est : totale, chevauchante
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>736</x><y>632</y><w>184</w><h>48</h></coordinates><panel_attributes>lt=[numExo]-
+m2=1..n
+contient &gt;
+1..n
+</panel_attributes><additional_attributes>30;20;210;20</additional_attributes></element></diagram>
